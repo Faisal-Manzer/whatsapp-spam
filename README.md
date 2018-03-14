@@ -1,4 +1,15 @@
-**This is my first python code**
-Do configure path to Chrome driver
-use this file to spam any Whatsapp contact using whatsapp web
-'''python <source to file>'''
+#Faisal's Whatsapp Spammer
+###This is my first ever python code
+
+**Requirement**
+  * python
+  * Chrome Web Driver
+  * **selenium** Library installed
+  * this code ofcourse
+
+**Installation**
+  * Download This code
+  * configure path of Chrome Web Driver
+  * Run ```python faisalWhatsappSpammer.py
+
+  ```
