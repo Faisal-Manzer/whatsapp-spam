@@ -1,34 +1,51 @@
-from selenium import webdriver
 import time
+from selenium import webdriver
+
+#configure path of webdriver
+#----------------------------------------------------
 path = "/Users/faisal_manzer/Downloads/chromedriver"
-driver = webdriver.Chrome(path)
+#----------------------------------------------------
 
-def intro():
-    print("\n\nCopyright Faisal Manzer")
-    print("\n\nTo exit enter 'N'")
-    print("\n1. Scan the QR Code")
-    print("\n2. Go to the chat whom u want to send message")
-
-def execute():
-    message = raw_input("What's your message: ")
-    times = int(raw_input("Number of times u want to send: "))
-    delay = int(raw_input("Set Delay for messages in sec: "))
-    for x in range(0, times):
+def errOcc(mess):
+    print ""
+    print mess
+    p = raw_input("Enter Any thing to continue... ")
+def faisalMessage(message):
         messBox = driver.find_element_by_class_name('_3F6QL')
         messBox.click()
         messBox.send_keys(message)
         clickButton = driver.find_element_by_class_name("_2lkdt")
         clickButton.click()
-        time.sleep(delay)
-exitCont = 1
-driverCont = 1
-while exitCont:
+def getMessage():
+    try:
+        message = raw_input("What's your message: ")
+        times = int(raw_input("Number of times u want to send: "))
+        delay = int(raw_input("Set Delay for messages in sec: "))
+        for x in range(0, times):
+            try:
+                faisalMessage(message)
+                time.sleep(delay)
+            except:
+                errOcc("Sorry :( script is unable to send message... Have u done all steps")
+    except:
+        errOcc("Plz Enter Valid Value")
+def intro():
+    print "\nFaisal Manzer app just for fun"
+    print "\n1. Scan The QR code"
+    print "2. Go the the chat u whom want to send message"
+    print "3. Enter 'X' to exit"
+def clear():
+    for x in range(0, 15):
+        print("")
+driver = webdriver.Chrome(path)
+driver.get("https://web.whatsapp.com/")
+exitCont = 0;
+while not exitCont:
+    clear()
     intro()
-    if driverCont:
-        driver.get("https://web.whatsapp.com/")
-        driverCont = 0
-    yorn = raw_input("\n3. Enter 'Y' When Done: ")
-    if yorn=='Y' or yorn=='y':
-        execute()
-    else:
-        exitCont = 0
+    doneAll = raw_input("4. Enter 'Y' when done: ")
+    if doneAll == 'Y' or doneAll == 'y':
+        getMessage()
+    if doneAll == 'x' or doneAll == 'X':
+        exitCont = 1
+print("Faisal Manzer\nThanks for using :)")
