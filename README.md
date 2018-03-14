@@ -17,7 +17,7 @@ To stop sending message at any time close the Chrome tab
   * Run `python faisalWhatsAppSpammer.py`
 
 **Downloads From Where**
-  * [Chrome Web Driver](https://sites.google.com/a/chromium.org/chromedriver/getting-started)
+  * [Chrome Web Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
   * `pip install selenium` To install selenium
 
 Do not forget to say `i like you` to your `crush` 1000 times 😝🤣
