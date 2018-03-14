@@ -15,3 +15,5 @@
 **Downloads From Where**
   * [Chrome Web Driver](https://sites.google.com/a/chromium.org/chromedriver/getting-started)
   * `pip install selenium` To install selenium
+
+Do not forget to say `i love u` to your **crush** 1000 times 😝🤣 
