@@ -1,6 +1,10 @@
 # Faisal's WhatsApp Spammer
 ### This is my first ever python code
 
+U can use this script to send messages on WhatsApp multiple times.
+Use it to impress any one or just to annoy.
+To stop sending message at any time close the Chrome tab
+
 **Requirement**
   * python
   * Chrome Web Driver
@@ -16,4 +20,4 @@
   * [Chrome Web Driver](https://sites.google.com/a/chromium.org/chromedriver/getting-started)
   * `pip install selenium` To install selenium
 
-Do not forget to say `i love u` to your **crush** 1000 times 😝🤣 
+Do not forget to say `i like you` to your `crush` 1000 times 😝🤣
