@@ -7,8 +7,8 @@ path = "/Users/faisal_manzer/Downloads/chromedriver"
 #----------------------------------------------------
 
 def errOcc(mess):
-    print ""
-    print mess
+    print("")
+    print(mess)
     p = input("Enter Any thing to continue... ")
 def faisalMessage(message):
         messBox = driver.find_element_by_class_name('_3F6QL')
@@ -30,10 +30,10 @@ def getMessage():
     except:
         errOcc("Plz Enter Valid Value")
 def intro():
-    print "\nFaisal Manzer app just for fun"
-    print "\n1. Scan The QR code"
-    print "2. Go the the chat u whom want to send message"
-    print "3. Enter 'X' to exit"
+    print("\nFaisal Manzer app just for fun")
+    print("\n1. Scan The QR code")
+    print("2. Go the the chat u whom want to send message")
+    print("3. Enter 'X' to exit")
 def clear():
     for x in range(0, 15):
         print("")
