@@ -9,7 +9,7 @@ path = "/Users/faisal_manzer/Downloads/chromedriver"
 def errOcc(mess):
     print ""
     print mess
-    p = raw_input("Enter Any thing to continue... ")
+    p = input("Enter Any thing to continue... ")
 def faisalMessage(message):
         messBox = driver.find_element_by_class_name('_3F6QL')
         messBox.click()
@@ -18,9 +18,9 @@ def faisalMessage(message):
         clickButton.click()
 def getMessage():
     try:
-        message = raw_input("What's your message: ")
-        times = int(raw_input("Number of times u want to send: "))
-        delay = int(raw_input("Set Delay for messages in sec: "))
+        message = input("What's your message: ")
+        times = int(input("Number of times u want to send: "))
+        delay = int(input("Set Delay for messages in sec: "))
         for x in range(0, times):
             try:
                 faisalMessage(message)
@@ -43,7 +43,7 @@ exitCont = 0;
 while not exitCont:
     clear()
     intro()
-    doneAll = raw_input("4. Enter 'Y' when done: ")
+    doneAll = input("4. Enter 'Y' when done: ")
     if doneAll == 'Y' or doneAll == 'y':
         getMessage()
     if doneAll == 'x' or doneAll == 'X':
